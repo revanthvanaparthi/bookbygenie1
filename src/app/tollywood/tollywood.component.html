@@ -1,6 +1,6 @@
 <ul id="sub">
   <li *ngFor="let i of movie">
-    <div *ngIf="i.visible[0]&&i.visible[1]">
+    <div *ngIf="i.visible[0]&&i.visible[1]&&i.visible[2]">
       <button style="background-color:white;height:350">
         <img [src]="i.image" height="300" width="180" [alt]="i.name" />
         <p style="color:black">{{i.name}}</p>
