@@ -13,7 +13,8 @@ export class SevicingService {
       language: "Telugu",
       image: "./assets/35.jpg",
       visible: [true, true],
-      category: "stream"
+      category: "stream",
+      location: ["",""]
     },
     {
       name: "Monster Island",
@@ -21,7 +22,8 @@ export class SevicingService {
       language: "Telugu",
       image: "./assets/34.jpg",
       visible: [true, true],
-      category: "stream"
+      category: "stream",
+      location: ["",""]
     },
     {
       name: "Ride Like A Girl",
@@ -29,7 +31,8 @@ export class SevicingService {
       language: "Telugu",
       image: "./assets/33.jpg",
       visible: [true, true],
-      category: "stream"
+      category: "stream",
+      location: ["",""]
     },
     {
       name: "Judas And The Black Messiah",
@@ -37,7 +40,8 @@ export class SevicingService {
       language: "English",
       image: "./assets/30.jpg",
       visible: [true, true],
-      category: "stream"
+      category: "stream",
+      location: ["",""]
     },
     {
       name: "Heroic Losers",
@@ -45,7 +49,8 @@ export class SevicingService {
       language: "Hindi",
       image: "./assets/29.jpg",
       visible: [true, true],
-      category: "stream"
+      category: "stream",
+      location: ["",""]
     },
     {
       name: "The Witches",
@@ -53,7 +58,8 @@ export class SevicingService {
       language: "Hindi",
       image: "./assets/28.jpg",
       visible: [true, true],
-      category: "stream"
+      category: "stream",
+      location: ["",""]
     },
     {
       name: "Coda",
@@ -61,7 +67,8 @@ export class SevicingService {
       language: "English",
       image: "./assets/27.jpg",
       visible: [true, true],
-      category: "stream"
+      category: "stream",
+      location: ["",""]
     },
     {
       name: "Midsommar",
@@ -69,7 +76,8 @@ export class SevicingService {
       language: "Hindi",
       image: "./assets/26.jpg",
       visible: [true, true],
-      category: "stream"
+      category: "stream",
+      location: ["",""]
     },
     {
       name: "Monster Hunter",
@@ -77,7 +85,8 @@ export class SevicingService {
       language: "English",
       image: "./assets/25.jpg",
       visible: [true, true],
-      category: "stream"
+      category: "stream",
+      location: ["",""]
     },
     {
       name: "The Power",
@@ -85,7 +94,8 @@ export class SevicingService {
       language: "Hindi",
       image: "./assets/23.jpg",
       visible: [true, true],
-      category: "stream"
+      category: "stream",
+      location: ["",""]
     },
     {
       name: "Abijit Ganguly",
@@ -93,7 +103,8 @@ export class SevicingService {
       language: "Hindi",
       image: "./assets/22.jpg",
       visible: [true, true],
-      category: "event"
+      category: "event",
+      location: ["",""]
     },
     {
       name: "Staccato @ Hylife",
@@ -101,7 +112,8 @@ export class SevicingService {
       language: "Hindi",
       image: "./assets/21.jpg",
       visible: [true, true],
-      category: "event"
+      category: "event",
+      location: ["",""]
     },
     {
       name: "Drama for Youth",
@@ -109,7 +121,8 @@ export class SevicingService {
       language: "Hindi",
       image: "./assets/20.jpg",
       visible: [true, true],
-      category: "event"
+      category: "event",
+      location: ["",""]
     },
     {
       name: "Saikiran Rolling",
@@ -117,7 +130,8 @@ export class SevicingService {
       language: "Telugu",
       image: "./assets/19.jpg",
       visible: [true, true],
-      category: "event"
+      category: "event",
+      location: ["",""]
     },
     {
       name: "Rajasekhar Mamidanna",
@@ -125,7 +139,8 @@ export class SevicingService {
       language: "Telugu",
       image: "./assets/18.jpg",
       visible: [true, true],
-      category: "event"
+      category: "event",
+      location: ["",""]
     },
     {
       name: "Online Yoga",
@@ -133,7 +148,8 @@ export class SevicingService {
       language: "Telugu",
       image: "./assets/17.jpg",
       visible: [true, true],
-      category: "event"
+      category: "event",
+      location: ["",""]
     },
     {
       name: "Punchliuners",
@@ -141,7 +157,8 @@ export class SevicingService {
       language: "English",
       image: "./assets/16.jpg",
       visible: [true, true],
-      category: "event"
+      category: "event",
+      location: ["",""]
     },
     {
       name: "Technique for Actors",
@@ -149,7 +166,8 @@ export class SevicingService {
       language: "English",
       image: "./assets/15.jpg",
       visible: [true, true],
-      category: "event"
+      category: "event",
+      location: ["",""]
     },
     {
       name: "Vakeel Saab",
@@ -157,7 +175,8 @@ export class SevicingService {
       language: "Telugu",
       image: "./assets/1.jpg",
       visible: [true, true],
-      category: "movie"
+      category: "movie",
+      location: ["",""]
     },
     {
       name: "Rang De",
@@ -165,7 +184,8 @@ export class SevicingService {
       language: "Telugu",
       image: "/assets/2.jpg",
       visible: [true, true],
-      category: "movie"
+      category: "movie",
+      location: ["",""]
     },
     {
       name: "Sulthan",
@@ -173,7 +193,8 @@ export class SevicingService {
       language: "Telugu",
       image: "/assets/3.jpg",
       visible: [true, true],
-      category: "movie"
+      category: "movie",
+      location: ["",""]
     },
     {
       name: "Wild Dog",
@@ -181,7 +202,8 @@ export class SevicingService {
       language: "Telugu",
       image: "/assets/4.jpg",
       visible: [true, true],
-      category: "movie"
+      category: "movie",
+      location: ["",""]
     },
     /*{
       name: "Tom & Jerry",
@@ -189,7 +211,8 @@ export class SevicingService {
       language: "English",
       image: "/assets/5.jpg",
       visible: [true, true],
-      category: "stream"
+      category: "stream",
+      location: ["",""]
     },*/
     {
       name: "Godzilla vs Kon",
@@ -197,7 +220,8 @@ export class SevicingService {
       language: "English",
       image: "/assets/6.jpg",
       visible: [true, true],
-      category: "movie"
+      category: "movie",
+      location: ["",""]
     },
     {
       name: "Roohi",
@@ -205,7 +229,8 @@ export class SevicingService {
       language: "Hindi",
       image: "/assets/7.jpg",
       visible: [true, true],
-      category: "movie"
+      category: "movie",
+      location: ["",""]
     },
     {
       name: "Bansuri",
@@ -213,7 +238,8 @@ export class SevicingService {
       language: "Hindi",
       image: "/assets/8.jpg",
       visible: [true, true],
-      category: "movie"
+      category: "movie",
+      location: ["",""]
     },
     {
       name: "Voyagers",
@@ -221,7 +247,8 @@ export class SevicingService {
       language: "English",
       image: "/assets/9.jpg",
       visible: [true, true],
-      category: "movie"
+      category: "movie",
+      location: ["",""]
     },
     {
       name: "The Mouritanian",
@@ -229,7 +256,8 @@ export class SevicingService {
       language: "English",
       image: "/assets/10.jpg",
       visible: [true, true],
-      category: "movie"
+      category: "movie",
+      location: ["",""]
     },
     {
       name: "Deyyam",
@@ -237,7 +265,8 @@ export class SevicingService {
       language: "Telugu",
       image: "/assets/11.jpg",
       visible: [true, true],
-      category: "movie"
+      category: "movie",
+      location: ["",""]
     },
     /*{
       name: "Tenet",
@@ -245,7 +274,8 @@ export class SevicingService {
       language: "Telugu",
       image: "/assets/12.jpg",
       visible: [true, true],
-      category: "stream"
+      category: "stream",
+      location: ["",""]
     },*/
     {
       name: "Dongri Danger",
@@ -253,7 +283,8 @@ export class SevicingService {
       language: "Hindi",
       image: "/assets/13.jpg",
       visible: [true, true],
-      category: "event"
+      category: "event",
+      location: ["",""]
     },
     {
       name: "Good Vibes",
@@ -261,7 +292,8 @@ export class SevicingService {
       language: "English",
       image: "/assets/14.jpg",
       visible: [true, true],
-      category: "event"
+      category: "event",
+      location: ["",""]
     }
   ];
   setCategory(s: string) {
