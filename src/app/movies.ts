@@ -5,4 +5,5 @@ export interface Movies {
   image: string;
   visible: boolean[];
   category: string;
+  location: string[];
 }
