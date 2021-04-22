@@ -87,7 +87,7 @@
     <ul>
       <li *ngFor="let i of movie">
         <button
-          *ngIf="i.category === 'movie'"
+          *ngIf="i.category === 'movie'&&i.visible[2]"
           style="background-color:white;border-radius:40px"
         >
           <img [src]="i.image" height="300" width="200" alt="i.name" />
@@ -99,7 +99,7 @@
     <ul>
       <li *ngFor="let i of movie">
         <button
-          *ngIf="i.category==='stream'"
+          *ngIf="i.category==='stream'&&i.visible[2]"
           style="background-color:white;border-radius:40px"
         >
           <img [src]="i.image" height="300" width="200" alt="i.name" />
@@ -111,7 +111,7 @@
     <ul>
       <li *ngFor="let i of movie">
         <button
-          *ngIf="i.category==='event'"
+          *ngIf="i.category==='event'&&i.visible[2]"
           style="background-color:white;border-radius:40px"
         >
           <img [src]="i.image" height="300" width="200" alt="i.name" />
