@@ -1,0 +1,43 @@
+import { NgModule } from "@angular/core";
+import { BrowserModule } from "@angular/platform-browser";
+import { FormsModule, ReactiveFormsModule } from "@angular/forms";
+import { AppRoutingModule, routingComponent } from "./app-routing.module";
+import { AppComponent } from "./app.component";
+import { SevicingService } from "./sevicing.service";
+import { SignupComponent } from "./signup/signup.component";
+import { TollywoodComponent } from "./tollywood/tollywood.component";
+import { SlickCarouselModule } from "ngx-slick-carousel";
+
+import { BrowserAnimationsModule } from "@angular/platform-browser/animations";
+import { MatDatepickerModule } from "@angular/material/datepicker";
+import { MatInputModule } from "@angular/material/input";
+import { MatNativeDateModule } from "@angular/material/core";
+import { MatFormFieldModule } from "@angular/material/form-field";
+import { MatExpansionModule } from "@angular/material/expansion";
+import { MatButtonModule } from "@angular/material/button";
+
+@NgModule({
+  declarations: [
+    AppComponent,
+    routingComponent,
+    SignupComponent,
+    TollywoodComponent
+  ],
+  imports: [
+    BrowserModule,
+    AppRoutingModule,
+    SlickCarouselModule,
+    FormsModule,
+    ReactiveFormsModule,
+    BrowserAnimationsModule,
+    MatDatepickerModule,
+    MatInputModule,
+    MatNativeDateModule,
+    MatFormFieldModule,
+    MatExpansionModule,
+    MatButtonModule
+  ],
+  providers: [SevicingService],
+  bootstrap: [AppComponent]
+})
+export class AppModule {}

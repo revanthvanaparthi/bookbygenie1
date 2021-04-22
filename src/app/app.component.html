@@ -1,0 +1,143 @@
+<header>
+  <table>
+    <tr>
+      <th>
+        <h3>
+          <a href=""
+            ><button style="background-color:rgba(89, 88, 100 );">
+              BookByGenie
+            </button></a
+          >
+        </h3>
+      </th>
+      <th>
+        <input
+          class="search"
+          name="search"
+          id="search"
+          type="text"
+          placeholder="Search for Movies,Events,Plays,Sports and Activities"
+        />
+      </th>
+
+      <th>
+        <div class="dropdown">
+          <button class="dropbtn">Location</button>
+          <div class="dropdown-content">
+            <a href="#">Vijayawada</a>
+            <a href="#">Hyderabad</a>
+            <a href="#">Mumbai</a>
+            <a href="#">Delhi</a>
+          </div>
+        </div>
+      </th>
+      <th>
+        <button class="btn btn-primary" (click)="Nav(13,'SignUp')">
+          SignUp
+        </button>
+      </th>
+    </tr>
+  </table>
+</header>
+<div class="nav1">
+  <a routerLink="/Movies,Sports&Events"
+    ><button (click)="Nav(1,'movie')">Movies</button></a
+  >
+  <a routerLink="/Movies,Sports&Events"
+    ><button (click)="Nav(2,'stream')">Stream</button></a
+  >
+  <a routerLink="/Movies,Sports&Events"
+    ><button (click)="Nav(3,'event')">Events</button></a
+  >
+  <a href=""><button (click)="Nav(4,'play')">Plays</button></a>
+  <a href=""><button (click)="Nav(5,'sport')">Sports</button></a>
+  <a href=""><button (click)="Nav(6,'activity')">Activities</button></a>
+  <a style="margin-right: 350px;" href=""
+    ><button (click)="Nav(8,'buzz')">Buzz</button></a
+  >
+  <a href=""><button (click)="Nav(9,'lys')">ListYourShow</button></a>
+  <a href=""><button (click)="Nav(11,'offer')">Offers</button></a>
+  <a href=""><button (click)="Nav(12,'gift')">Gift Cards</button></a>
+</div>
+<router-outlet></router-outlet>
+<div class="slider">
+  <figure>
+    <img
+      src="https://in.bmscdn.com/showcaseimage/eventimage/ncpa--citi-aadi-anant-16-04-2021-11-59-34-601.jpg"
+    />
+    <img
+      src="https://in.bmscdn.com/showcaseimage/eventimage/dabang-ips-12-03-2021-02-38-07-089.jpg"
+    />
+    <img
+      src="https://in.bmscdn.com/showcaseimage/eventimage/summer-express-2021-online-workshops-for-children-15-04-2021-12-07-57-009.jpg"
+    />
+    <img
+      src="https://in.bmscdn.com/showcaseimage/eventimage/sadhguru-live-with-chetan-bhagat--get-a-free-book-07-04-2021-04-24-11-530.jpg"
+    />
+    <img
+      src="https://in.bmscdn.com/showcaseimage/eventimage/ncpa--citi-aadi-anant-16-04-2021-11-59-34-601.jpg"
+    />
+  </figure>
+</div>
+<div style="min-height: 180vh;">
+  <app-signup *ngIf="page[13]"></app-signup>
+  <div class="main" *ngIf="page[0]">
+    &nbsp;
+    <h3>Recommended Movies</h3>
+    <ul>
+      <li *ngFor="let i of movie">
+        <button
+          *ngIf="i.category === 'movie'"
+          style="background-color:white;border-radius:40px"
+        >
+          <img [src]="i.image" height="300" width="200" alt="i.name" />
+          <p style="color:black">{{i.name}}</p>
+        </button>
+      </li>
+    </ul>
+    <img
+      src="/assets/stream.png"
+      style="padding:33px;margin-left:10%;"
+      width="80%"
+    />
+    <h3>Premiers</h3>
+    <ul>
+      <li *ngFor="let i of movie">
+        <button
+          *ngIf="i.category==='stream'"
+          style="background-color:white;border-radius:40px"
+        >
+          <img [src]="i.image" height="300" width="200" alt="i.name" />
+          <p style="color:black">{{i.name}}</p>
+        </button>
+      </li>
+    </ul>
+    <h3>Indoor/Outdoor Events</h3>
+    <ul>
+      <li *ngFor="let i of movie">
+        <button
+          *ngIf="i.category==='event'"
+          style="background-color:white;border-radius:40px"
+        >
+          <img [src]="i.image" height="300" width="200" alt="i.name" />
+          <p style="color:black">{{i.name}}</p>
+        </button>
+      </li>
+    </ul>
+  </div>
+</div>
+
+<footer style="background-color:rgba(81, 81, 84);color:white;">
+  By using www.bookmyshow.com(our website), you are fully accepting the Privacy
+  Policy available at governing your access to Bookmyshow and provision of
+  services by Bookmyshow to you. If you do not accept terms mentioned in the ,
+  you must not share any of your personal information and immediately exit
+  Bookmyshow.
+  <br />Countries<br />
+  &nbsp; Indonesia &nbsp; Singapore &nbsp; UAE &nbsp; Sri Lanka &nbsp; West
+  Indies
+  <br />Help<br />
+  &nbsp; About Us &nbsp; Contact Us &nbsp; Current Openings &nbsp; Press Release
+  &nbsp; Press Coverage &nbsp; Terms &amp; Conditions &nbsp; Privacy Policy
+  &nbsp; FAQs &nbsp; Sitemap
+</footer>
