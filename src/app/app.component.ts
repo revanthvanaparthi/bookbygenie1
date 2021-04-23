@@ -27,9 +27,9 @@ export class AppComponent {
     false
   ];
   locations = [
+    { id: null, name: "Location" },
     { id: "Hyderabad", name: "Hyderabad" },
     { id: "Vijayawada", name: "Vijayawada" },
-    { id: "Chennai", name: "Chennai" },
     { id: "Mumbai", name: "Mumbai" },
     { id: "Delhi", name: "Delhi" }
   ];
