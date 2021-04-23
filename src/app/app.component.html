@@ -21,15 +21,19 @@
       </th>
 
       <th>
-        <div class="dropdown">
+        <!--<div class="dropdown">
           <button class="dropbtn">Location</button>
           <div class="dropdown-content">
-            <a href="#">Vijayawada</a>
-            <a href="#">Hyderabad</a>
-            <a href="#">Mumbai</a>
-            <a href="#">Delhi</a>
+            <select name="loc" id="loc">
+              <option *ngFor="let i of locations" value="i.id"
+                >{{i.name}}</option
+              >
+            </select>
           </div>
-        </div>
+        </div>-->
+        <select class="dropbtn" name="loc" id="loc">
+          <option *ngFor="let i of locations" value="i.id">{{i.name}}</option>
+        </select>
       </th>
       <th>
         <button class="btn btn-primary" (click)="Nav(13,'SignUp')">
