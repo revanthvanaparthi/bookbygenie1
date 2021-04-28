@@ -296,6 +296,7 @@ export class SevicingService {
       category: "event"
     }
   ];
+  public book: Movies;
   setCategory(s: string) {
     for (let i = 0; i < this.cinema.length; i++) {
       this.cinema[i].visible[0] = false;
@@ -304,5 +305,11 @@ export class SevicingService {
   }
   getCategory(): Movies[] {
     return this.cinema;
+  }
+  BookByGenie(n: Movies){
+    this.book=n;
+  }
+  getBookByGenie(): Movies{
+    return this.book;
   }
 }
