@@ -1,3 +1,75 @@
-<mat-card>
-  <img [src]="M.image" [alt]="M.name" class="card" />
-</mat-card>
+<div class="containerdiv">
+  <div class="box">
+    <img [src]="M.image" style="width: 100%; height: 520px;" />
+  </div>
+  <div class="box stack-top">
+    <div class="flex-container1">
+      <div>
+        <img
+          [src]="M.image"
+          [alt]="M.name"
+          width="300px"
+          height="450px"
+          style="border-radius: 25px;margin-top: 50px ;"
+        />
+      </div>
+      <div>
+        <br /><br /><br />
+        <h1
+          style="color: white;margin-top: 30%; font-weight: bold;font-size: x-large;"
+        >
+          {{M.name}}
+        </h1>
+        <div class="flex-container2">
+          <div>
+            <h1
+              style="color: rgb(241,50,50);margin-top: 15%; text-align: left;margin-left: 40px;font-weight: bold;font-size: xxx-large;"
+            >
+              &#10084;
+            </h1>
+          </div>
+        </div>
+        <div class="flex-container2">
+          <div>
+            <div
+              style="color:black;margin-top: 15%; text-align: left;margin-left: 40px;font-weight: bold;font-size: s-large;background-color: rgb(236, 236, 236);padding: 20px;width: fit-content;"
+            >
+              2D
+            </div>
+          </div>
+          <div>
+            <div
+              style="color:black;margin-top: 15%; text-align: left;margin-left: -2px;font-weight: bold;font-size: s-large;background-color: rgb(236, 236, 236);padding: 20px;width: fit-content;"
+            >
+              {{M.language}}
+            </div>
+          </div>
+        </div>
+
+        <h3
+          style="color: white;margin-top: 10%; text-align: left;margin-left: 45px ;font-size: s-large;"
+        >
+          Genre : {{M.genre}}
+        </h3>
+        <button
+          class="button-five"
+          routerLink="/Bollywood"
+          style="text-align: left;margin-left: -50px;margin-top: 50px;"
+        >
+          Book Here
+        </button>
+      </div>
+    </div>
+    <br />
+    <br />
+    <!--
+<div style="margin-left: 20px;">
+  <h1 style="font-weight: bold;">About Movie</h1>
+  <h3>
+    {{M.description}}
+
+  </h3>
+  <br><br><br><br><br><br>
+</div>-->
+  </div>
+</div>
