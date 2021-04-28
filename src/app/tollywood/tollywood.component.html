@@ -22,7 +22,10 @@
   <li *ngFor="let i of movie">
     <div *ngIf="i.visible[0]&&i.visible[1]&&i.visible[2]">
       <a routerLink="/Booking"
-        ><button style="background-color:white;height:350;border:none" (click)="Book(i)">
+        ><button
+          style="background-color:white;height:350;border:none"
+          (click)="this.ser.BookByGenie(i)"
+        >
           <img [src]="i.image" height="300" width="180" [alt]="i.name" />
           <p style="color:black">{{i.name}}</p>
         </button></a
