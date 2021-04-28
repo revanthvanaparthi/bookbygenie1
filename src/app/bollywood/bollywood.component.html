@@ -6,11 +6,21 @@
   </div>
   <div class="sub">
     <h4>Select Date</h4>
-    <button class="button button2">{{d.getDate()}}</button>
-    <button class="button button2">{{d.getDate()+1}}</button>
-    <button class="button button2">{{d.getDate()+2}}</button>
-    <button class="button button2">{{d.getDate()+3}}</button>
-    <button class="button button2">{{d.getDate()+4}}</button>
+    <button class="button button2" style="background-color: #f84464;">
+      {{d.getDate()}}
+    </button>
+    <button class="button button2" style="background-color: #f84464;">
+      {{d.getDate()+1}}
+    </button>
+    <button class="button button2" style="background-color: #f84464;">
+      {{d.getDate()+2}}
+    </button>
+    <button class="button button2" style="background-color: #f84464;">
+      {{(d.getDate()+3)%30}}
+    </button>
+    <button class="button button2" style="background-color: #f84464;">
+      {{(d.getDate()+4)%30}}
+    </button>
     <div *ngFor="let i of theaters">
       <hr />
       <h6 style="font-style:bold">{{i}}</h6>
