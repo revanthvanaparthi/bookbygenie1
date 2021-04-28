@@ -21,16 +21,6 @@
       </th>
 
       <th>
-        <!--<div class="dropdown">
-          <button class="dropbtn">Location</button>
-          <div class="dropdown-content">
-            <select name="loc" id="loc">
-              <option *ngFor="let i of locations" value="i.id"
-                >{{i.name}}</option
-              >
-            </select>
-          </div>
-        </div>-->
         <select class="dropbtn" name="loc" id="loc">
           <option *ngFor="let i of locations" value="i.id">{{i.name}}</option>
         </select>
@@ -83,7 +73,7 @@
     />
   </figure>
 </div>
-<div style="min-height: 190vh;">
+<div>
   <app-signup *ngIf="page[13]"></app-signup>
   <div class="main" *ngIf="page[0]">
     &nbsp;
@@ -125,18 +115,3 @@
     </ul>
   </div>
 </div>
-
-<footer style="background-color:rgba(81, 81, 84);color:white;">
-  By using www.bookmyshow.com(our website), you are fully accepting the Privacy
-  Policy available at governing your access to Bookmyshow and provision of
-  services by Bookmyshow to you. If you do not accept terms mentioned in the ,
-  you must not share any of your personal information and immediately exit
-  Bookmyshow.
-  <br />Countries<br />
-  &nbsp; Indonesia &nbsp; Singapore &nbsp; UAE &nbsp; Sri Lanka &nbsp; West
-  Indies
-  <br />Help<br />
-  &nbsp; About Us &nbsp; Contact Us &nbsp; Current Openings &nbsp; Press Release
-  &nbsp; Press Coverage &nbsp; Terms &amp; Conditions &nbsp; Privacy Policy
-  &nbsp; FAQs &nbsp; Sitemap
-</footer>
