@@ -15,6 +15,7 @@ import { MatNativeDateModule } from "@angular/material/core";
 import { MatFormFieldModule } from "@angular/material/form-field";
 import { MatExpansionModule } from "@angular/material/expansion";
 import { MatButtonModule } from "@angular/material/button";
+import { MatCardModule } from "@angular/material/card";
 
 @NgModule({
   declarations: [
@@ -35,7 +36,8 @@ import { MatButtonModule } from "@angular/material/button";
     MatNativeDateModule,
     MatFormFieldModule,
     MatExpansionModule,
-    MatButtonModule
+    MatButtonModule,
+    MatCardModule
   ],
   providers: [SevicingService],
   bootstrap: [AppComponent]
