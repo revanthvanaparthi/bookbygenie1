@@ -4,4 +4,26 @@
     <button>Genre : {{M.genre}}</button>
     <button style="margin: 0.5% .3%;">Language : {{M.language}}</button>
   </div>
+  <div class="sub">
+    <h4>Select Date</h4>
+    <button class="button button2">{{d.getDate()}}</button>
+    <button class="button button2">{{d.getDate()+1}}</button>
+    <button class="button button2">{{d.getDate()+2}}</button>
+    <button class="button button2">{{d.getDate()+3}}</button>
+    <button class="button button2">{{d.getDate()+4}}</button>
+    <div *ngFor="let i of theaters">
+      <hr />
+      <h6 style="font-style:bold">{{i}}</h6>
+      <ul style="list-style: none;overflow:hidden">
+        <li *ngFor="let j of shows" style="float:left;margin: 3%;">
+          <button
+            class="button button2"
+            style="border-radius:5px;width:90px;border:#73ad21;border:solid;"
+          >
+            {{j}}
+          </button>
+        </li>
+      </ul>
+    </div>
+  </div>
 </div>
