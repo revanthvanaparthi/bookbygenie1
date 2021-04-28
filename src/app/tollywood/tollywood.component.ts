@@ -29,7 +29,4 @@ export class TollywoodComponent implements OnInit {
     for (let i = 0; i < this.movie.length; i++) this.movie[i].visible[1] = true;
     for (let i = 0; i < this.movie.length; i++) this.movie[i].visible[1] = true;
   }
-  Book(m: Movies) {
-    this.ser.BookByGenie(m);
-  }
 }
