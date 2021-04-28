@@ -9,7 +9,7 @@ import { TollywoodComponent } from "./tollywood/tollywood.component";
 const routes: Routes = [
   { path: "SignUp", component: SignupComponent },
   { path: "Movies,Sports&Events", component: TollywoodComponent },
-  { path: "Bollywood", component: BollywoodComponent },
+  { path: "Tickets", component: BollywoodComponent },
   { path: "Booking", component: HollywoodComponent },
   { path: "*", component: AppComponent }
 ];
