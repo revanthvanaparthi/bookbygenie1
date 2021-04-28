@@ -4,8 +4,6 @@ import { FormsModule, ReactiveFormsModule } from "@angular/forms";
 import { AppRoutingModule, routingComponent } from "./app-routing.module";
 import { AppComponent } from "./app.component";
 import { SevicingService } from "./sevicing.service";
-import { SignupComponent } from "./signup/signup.component";
-import { TollywoodComponent } from "./tollywood/tollywood.component";
 import { SlickCarouselModule } from "ngx-slick-carousel";
 
 import { BrowserAnimationsModule } from "@angular/platform-browser/animations";
@@ -18,12 +16,7 @@ import { MatButtonModule } from "@angular/material/button";
 import { MatCardModule } from "@angular/material/card";
 
 @NgModule({
-  declarations: [
-    AppComponent,
-    routingComponent,
-    SignupComponent,
-    TollywoodComponent
-  ],
+  declarations: [AppComponent, routingComponent],
   imports: [
     BrowserModule,
     AppRoutingModule,
